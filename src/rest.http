@@ -1,0 +1,28 @@
+// create user
+POST http://localhost:1337/api/users
+Content-Type: application/json
+
+{
+  "email": "John@gmail.com",
+  "password": "johnmef09",
+  "passwordConfirmation": "johnmef09",
+  "name": "John"
+}
+
+
+###
+// create session
+POST http://localhost:1337/api/sessions
+Content-Type: application/json
+
+{
+  "email": "John@gmail.com",
+  "password": "johnmef09"
+}
+
+### 
+DELETE http://localhost:1337/api/sessions
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ5YTM4ZGZkNTYzNzMxODM5ZDNjNDIiLCJlbWFpbCI6IkpvaG5AZ21haWwuY29tIiwibmFtZSI6IkpvaG4iLCJjcmVhdGVkQXQiOiIyMDIyLTAxLTA4VDE0OjQ1OjMzLjA3NloiLCJ1cGRhdGVkQXQiOiIyMDIyLTAxLTA4VDE0OjQ1OjMzLjA3NloiLCJfX3YiOjAsInNlc3Npb24iOiI2MWQ5Y2EzZGM1NzIyNDY2MWYyZGM3MzAiLCJpYXQiOjE2NDE2NjMwMzcsImV4cCI6MTY0MTY2MzkzN30.Eq-_yIIyXvZyjiHo2xSxsvgaCevZtqIe5jB3YE1QB9g
+x-refresh: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjFkOWEzOGRmZDU2MzczMTgzOWQzYzQyIiwidmFsaWQiOnRydWUsInVzZXJBZ2VudCI6InZzY29kZS1yZXN0Y2xpZW50IiwiX2lkIjoiNjFkOWNhM2RjNTcyMjQ2NjFmMmRjNzMwIiwiY3JlYXRlZEF0IjoiMjAyMi0wMS0wOFQxNzozMDozNy41MThaIiwidXBkYXRlZEF0IjoiMjAyMi0wMS0wOFQxNzozMDozNy41MThaIiwiX192IjowLCJpYXQiOjE2NDE2NjMwMzcsImV4cCI6MTY3MzIyMDYzN30.2XeY7lDsWCQ2lEoO1JSH92F6Qx3_B9IAVRI7aBzgZOA
+
