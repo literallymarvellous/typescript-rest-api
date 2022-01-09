@@ -21,8 +21,6 @@ import {
 } from "./controller/post.controller";
 
 export default function (app: Express) {
-  app.get("/healthcheck", (req: Request, res: Response) => res.sendStatus(200));
-
   // register user
   app.post("/api/users", validateRequest(createUserSchema), createUserHandler);
 
