@@ -1,5 +1,7 @@
 ### REST API in Typescript
 
-## Backend: Node js & Express
+Backend: Node js & Express
 
-## Validation: Yup
+Validation: Yup
+
+Database: Mongo DB
